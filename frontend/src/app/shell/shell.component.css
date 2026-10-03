@@ -1,0 +1,91 @@
+.shell {
+  min-height: 100dvh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0.75rem auto 0;
+  padding: 0.7rem 0.8rem 0.7rem 1rem;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+}
+
+.brand {
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+}
+
+nav {
+  display: flex;
+  gap: 0.25rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+nav a.active,
+nav a:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.session {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.who {
+  font-weight: 700;
+}
+
+button {
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent);
+}
+
+main {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+@media (max-width: 720px) {
+  header {
+    flex-wrap: wrap;
+    border-radius: 22px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .session {
+    margin-left: auto;
+  }
+}

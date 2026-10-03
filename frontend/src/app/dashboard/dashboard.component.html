@@ -1,0 +1,32 @@
+<section class="hero">
+  <div>
+    <p class="eyebrow">Inicio</p>
+    <h1>Hola, {{ auth.username() }}.</h1>
+    <p>Estas dos respuestas salen del backend. La privada solo llega si el token es válido.</p>
+  </div>
+  <button type="button" (click)="reload()">Actualizar</button>
+</section>
+
+<div class="grid">
+  <article>
+    <header>
+      <h2>Público</h2>
+      <span class="badge open">Sin JWT</span>
+    </header>
+    <p class="path">GET /api/publico</p>
+    <p class="result" [class.error]="publico().status === 'error'" [class.loading]="publico().status === 'loading'">
+      {{ publico().text }}
+    </p>
+  </article>
+
+  <article>
+    <header>
+      <h2>Privado</h2>
+      <span class="badge locked">Con JWT</span>
+    </header>
+    <p class="path">GET /api/privado</p>
+    <p class="result" [class.error]="privado().status === 'error'" [class.loading]="privado().status === 'loading'">
+      {{ privado().text }}
+    </p>
+  </article>
+</div>

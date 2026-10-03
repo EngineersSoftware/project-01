@@ -1,0 +1,16 @@
+<div class="shell">
+  <header>
+    <a class="brand" routerLink="/dashboard">Demo API</a>
+    <nav>
+      <a routerLink="/dashboard" routerLinkActive="active">Inicio</a>
+      <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+    </nav>
+    <div class="session">
+      <span class="who">{{ auth.username() }}</span>
+      <button type="button" (click)="logout()">Salir</button>
+    </div>
+  </header>
+  <main>
+    <router-outlet />
+  </main>
+</div>

@@ -1,0 +1,13 @@
+{
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.maven.enabled": true,
+    "java.import.maven.recursive": true,
+    "java.import.gradle.enabled": false,
+    "java.server.launchMode": "Standard",
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.import.exclusions": [
+        "**/frontend/**",
+        "**/node_modules/**"
+    ]
+}

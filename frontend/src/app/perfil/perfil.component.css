@@ -1,0 +1,82 @@
+.profile {
+  max-width: 34rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 1.75rem;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--display);
+  font-size: 2rem;
+}
+
+.eyebrow {
+  margin: 1.1rem 0 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 2.6rem;
+  font-weight: 560;
+  letter-spacing: -0.04em;
+}
+
+.note {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+dl {
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+
+dt {
+  color: var(--muted);
+}
+
+dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+button {
+  margin-top: 0.5rem;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 12px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent);
+}
